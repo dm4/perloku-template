@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git clone http://github.com/dm4/perloku-template.git &&
+cd perloku-template &&
+heroku create -s cedar --buildpack http://github.com/judofyr/perloku.git &&
+git push heroku master
